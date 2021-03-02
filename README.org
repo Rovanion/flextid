@@ -1,0 +1,5 @@
+* FLEXtid
+
+Ett urbota dumt skript för att fylla i tidrapporter i FLEX HRM med hjälp av en Firefox som har Vim Vixen installerat.
+
+Ett bättre sätt att göra det här på hade varit att fånga de HTTP-förfrågningar som görs till och från systemet när man klickar runt i webbläsaren och sedan endast skicka dem fram och tillbaka med curl eller liknande. Men det har vi inte tid med!
