@@ -15,8 +15,12 @@ for dag in {1..5}; do
 	xdotool key       --window $firefox --delay 100 f a k
 	xdotool windowfocus $firefox
 	xdotool type      --window $firefox 'ARB'
+	sleep 0.1
+	xdotool key       --window $firefox Tab
+	sleep 1.5
+	xdotool key       --window $firefox --delay 300 6 Tab
 	sleep 0.7
-	xdotool key       --window $firefox --delay 200 Tab 6 Tab 1 2
+	xdotool key       --window $firefox --delay 100 1 4 3 0
 	echo "Sparar sida."
 	sleep 0.5
 	xdotool key       --window $firefox --delay 100 F6 Tab Tab Tab Tab f k
