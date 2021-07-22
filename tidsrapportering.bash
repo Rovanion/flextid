@@ -18,15 +18,19 @@ for dag in {1..5}; do
 	sleep 0.1
 	xdotool key       --window $firefox Tab
 	sleep 1.5
-	xdotool key       --window $firefox --delay 300 6 Tab
+	xdotool key       --window $firefox --delay 300 7 Tab
 	sleep 0.7
-	xdotool key       --window $firefox --delay 100 1 4 3 0
+	xdotool key       --window $firefox --delay 100 1 5 3 0 Tab
+	sleep 0.7
+	xdotool type      --window $firefox '94A18'
+	sleep 0.1
+	xdotool key       --window $firefox Tab
 	echo "Sparar sida."
 	sleep 0.5
 	xdotool key       --window $firefox --delay 100 F6 Tab Tab Tab Tab f k
 	echo "Väntar på att skiten ska ladda om innan vi får gå till nästa dag."
-	sleep 3.5
+	sleep 4
 	echo "Går till nästa dag."
-	xdotool key       --window $firefox --delay 100 f a j
+	xdotool key       --window $firefox --delay 150 f a j
 	sleep 4
 done
